@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#140d0b">
+  <meta name="description" content="Pizzas Claaudiss en Hopelchén. Consulta el menú, arma tu pedido y envíalo directamente por WhatsApp.">
+  <title>Pizzas Claaudiss | Sabor de hogar en Hopelchén</title>
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="site.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PizzaPlace",
+    "name": "Pizzas Claaudiss",
+    "telephone": "+52 981 208 5566",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle 15, Fraccionamiento Magisterial",
+      "addressLocality": "Hopelchén",
+      "addressRegion": "Campeche",
+      "addressCountry": "MX"
+    },
+    "servesCuisine": ["Pizza", "Hamburguesas", "Comida rápida"],
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=19.750448,-89.8513169"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>🍕 Pedidos para recoger o a domicilio</span>
+      <a href="tel:+529812085566">981 208 5566</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Pizzas Claaudiss, inicio">
+        <img src="assets/img/logo.webp" alt="Logotipo de Pizzas Claaudiss">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a class="is-active" href="index.html">Inicio</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a class="btn btn--small btn--solid" href="menu.html">Ver menú y pedir</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="hero__media" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="container hero__content reveal">
+        <p class="eyebrow">Pizzería local · Hopelchén</p>
+        <h1>Una pizza bien servida sabe a <em>hogar.</em></h1>
+        <p class="hero__lead">Elige tus sabores, arma tu pedido y envíalo directo por WhatsApp. Rápido, claro y sin pagos dentro de la página.</p>
+        <div class="hero__actions">
+          <a class="btn btn--solid btn--large" href="menu.html">
+            <span>Armar mi pedido</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--large" href="https://wa.me/529812085566?text=Hola%20Pizzas%20Claaudiss%2C%20quisiera%20hacer%20un%20pedido." target="_blank" rel="noopener">Hablar por WhatsApp</a>
+        </div>
+        <div class="hero__proof">
+          <div><strong>Hechas</strong><span>al momento</span></div>
+          <div><strong>Pedido</strong><span>por WhatsApp</span></div>
+          <div><strong>Entrega</strong><span>o para recoger</span></div>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#especialidades" aria-label="Bajar a especialidades"><span></span>Descubre</a>
+    </section>
+
+    <section class="section section--cream" id="especialidades">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <p class="eyebrow eyebrow--dark">Sabores para compartir</p>
+            <h2>Las favoritas de la casa</h2>
+          </div>
+          <p>Desde las clásicas hasta combinaciones con el toque de Claaudiss. La disponibilidad y los precios se confirman al enviar tu pedido.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="food-card food-card--wide reveal">
+            <img src="assets/img/pizza-pepperoni-hawaiana.webp" alt="Pizza con pepperoni, jamón, piña y pimiento" loading="lazy">
+            <div class="food-card__shade"></div>
+            <div class="food-card__content">
+              <span>Clásica</span>
+              <h3>Hawaiana</h3>
+              <p>Jamón, piña y queso gratinado.</p>
+              <a href="menu.html#pizzas">Agregar al pedido</a>
+            </div>
+          </article>
+          <article class="food-card reveal">
+            <img src="assets/img/pizza-pastor.webp" alt="Pizza con carne al pastor y pimientos" loading="lazy">
+            <div class="food-card__shade"></div>
+            <div class="food-card__content">
+              <span>Con carácter</span>
+              <h3>Pastor</h3>
+              <p>Carne al pastor, cebolla y pimiento.</p>
+              <a href="menu.html#pizzas">Agregar al pedido</a>
+            </div>
+          </article>
+          <article class="food-card reveal">
+            <img src="assets/img/pizza-cuatro-sabores.webp" alt="Pizza dividida en cuatro sabores" loading="lazy">
+            <div class="food-card__shade"></div>
+            <div class="food-card__content">
+              <span>Para todos</span>
+              <h3>Cuatro sabores</h3>
+              <p>Una sola pizza, varias combinaciones.</p>
+              <a href="menu.html#pizzas">Agregar al pedido</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="center-action reveal">
+          <a class="btn btn--dark btn--large" href="menu.html">Explorar menú completo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark process-section">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow">Pedir es muy fácil</p>
+          <h2>De la página a tu WhatsApp</h2>
+          <p>No necesitas registrarte ni pagar en línea. La página organiza tu pedido y el negocio continúa la atención directamente contigo.</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step__number">01</span>
+            <div class="step__icon">🍕</div>
+            <h3>Elige</h3>
+            <p>Selecciona pizzas, hamburguesas y extras.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step__number">02</span>
+            <div class="step__icon">🧾</div>
+            <h3>Revisa</h3>
+            <p>Ajusta cantidades, tamaño y datos de entrega.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step__number">03</span>
+            <div class="step__icon">💬</div>
+            <h3>Envía</h3>
+            <p>Tu pedido se abre ordenado en WhatsApp para confirmarlo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream gallery-section">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <p class="eyebrow eyebrow--dark">Recién salidas</p>
+            <h2>Se antojan desde la foto</h2>
+          </div>
+          <p>Queso gratinado, combinaciones abundantes y pizzas listas para compartir con familia o amigos.</p>
+        </div>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--tall reveal"><img src="assets/img/pizza-mitad-mitad.webp" alt="Pizza mitad hawaiana y mitad especial" loading="lazy"></figure>
+          <figure class="gallery__item reveal"><img src="assets/img/pizza-queso.webp" alt="Pizza de queso gratinado" loading="lazy"></figure>
+          <figure class="gallery__item reveal"><img src="assets/img/pizza-mixta.webp" alt="Pizza mixta con jamón, salchicha y pimientos" loading="lazy"></figure>
+          <figure class="gallery__item gallery__item--wide reveal"><img src="assets/img/local.webp" alt="Área de atención de Pizzas Claaudiss por la noche" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section payment-section">
+      <div class="container payment-card reveal">
+        <div class="payment-card__content">
+          <p class="eyebrow">Formas de pago</p>
+          <h2>Pagas directamente con el negocio</h2>
+          <p>La página no cobra ni guarda datos bancarios. Al confirmar por WhatsApp, Pizzas Claaudiss te indica el total y acuerda contigo la forma de pago.</p>
+          <div class="payment-pills" aria-label="Métodos de pago aceptados">
+            <span>💵 Efectivo</span>
+            <span>💳 Tarjeta de crédito</span>
+            <span>💳 Tarjeta de débito</span>
+          </div>
+          <small>La disponibilidad de terminal se confirma al realizar el pedido.</small>
+        </div>
+        <div class="payment-card__visual" aria-hidden="true">
+          <div class="receipt">
+            <span>PIZZAS CLAAUDISS</span>
+            <strong>PEDIDO</strong>
+            <i></i><i></i><i></i>
+            <b>Confirmación por WhatsApp</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="ubicacion">
+      <div class="container location-grid">
+        <div class="location-copy reveal">
+          <p class="eyebrow eyebrow--dark">Encuéntranos</p>
+          <h2>Pizzas Claaudiss en Hopelchén</h2>
+          <p class="location-address">Calle 15, Fraccionamiento Magisterial<br>Hopelchén, Campeche.</p>
+          <div class="location-info">
+            <div><span>Pedidos</span><a href="tel:+529812085566">981 208 5566</a></div>
+            <div><span>Atención</span><strong>Tardes y noches</strong></div>
+          </div>
+          <div class="location-actions">
+            <a class="btn btn--dark" href="https://www.google.com/maps/dir/?api=1&destination=19.750448,-89.8513169" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn btn--outline-dark" href="https://wa.me/529812085566?text=Hola%20Pizzas%20Claaudiss%2C%20quisiera%20consultar%20el%20horario%20de%20hoy." target="_blank" rel="noopener">Consultar horario</a>
+          </div>
+        </div>
+        <div class="map-card reveal">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.7776915849759!2d-89.8513169!3d19.750448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f57fbfd2d07350f%3A0x61b3d250457af734!2sPizzas%20Claaudiss!5e0!3m2!1ses-419!2smx!4v1784488268547!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Mapa de Pizzas Claaudiss"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="final-cta__bg" aria-hidden="true"></div>
+      <div class="container final-cta__content reveal">
+        <img src="assets/img/logo.webp" alt="" aria-hidden="true">
+        <div>
+          <p class="eyebrow">¿Ya se te antojó?</p>
+          <h2>Arma tu pedido en menos de un minuto.</h2>
+        </div>
+        <a class="btn btn--solid btn--large" href="menu.html">Comenzar pedido</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo.webp" alt="Pizzas Claaudiss">
+        <p>Sabor de hogar en cada rebanada.</p>
+      </div>
+      <div>
+        <h3>Accesos</h3>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú y pedidos</a>
+        <a href="#ubicacion">Ubicación</a>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <a href="tel:+529812085566">981 208 5566</a>
+        <a href="https://wa.me/529812085566" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.facebook.com/p/Pizzas-Claaudiss-100063816780151/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <div>
+        <h3>Importante</h3>
+        <p>Los precios, tiempos y disponibilidad se confirman directamente por WhatsApp.</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-current-year></span> Pizzas Claaudiss</span>
+      <span>Sitio demostrativo adaptable al menú oficial</span>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/529812085566?text=Hola%20Pizzas%20Claaudiss%2C%20quisiera%20hacer%20un%20pedido." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a12.8 12.8 0 0 0-11 19.4L3.2 29l6.8-1.8A12.9 12.9 0 1 0 16 3Zm0 23.3c-2 0-4-.6-5.7-1.6l-.4-.2-4 .9 1-3.9-.3-.4A10.4 10.4 0 1 1 16 26.3Zm5.7-7.8c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-2-.9-3.3-1.7-4.6-4-.3-.6.3-.5.9-1.7.1-.2 0-.5 0-.7l-1-2.4c-.3-.6-.6-.5-.9-.5H11c-.3 0-.7.1-1 .5-.4.4-1.4 1.4-1.4 3.4 0 2 1.5 4 1.7 4.3.2.3 2.9 4.4 7 6.2 2.6 1.1 3.6 1.2 4.9 1 1.5-.2 1.8-.9 2-1.7.2-.8.2-1.5.1-1.7-.1-.2-.3-.3-.6-.4Z"/></svg>
+  </a>
+</body>
+</html>

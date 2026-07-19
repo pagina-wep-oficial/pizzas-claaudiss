@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#140d0b">
+  <meta name="description" content="Arma tu pedido de Pizzas Claaudiss y envíalo organizado por WhatsApp.">
+  <title>Menú y pedidos | Pizzas Claaudiss</title>
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="site.js"></script>
+  <script defer src="order.js"></script>
+</head>
+<body class="menu-page">
+  <a class="skip-link" href="#menu-content">Saltar al menú</a>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>🍕 Tu pedido se confirma directamente por WhatsApp</span>
+      <a href="tel:+529812085566">981 208 5566</a>
+    </div>
+  </div>
+
+  <header class="site-header site-header--solid">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Pizzas Claaudiss, inicio">
+        <img src="assets/img/logo.webp" alt="Logotipo de Pizzas Claaudiss">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a class="is-active" href="menu.html">Menú y pedidos</a>
+        <a href="index.html#ubicacion">Ubicación</a>
+        <a class="btn btn--small btn--ghost" href="https://wa.me/529812085566" target="_blank" rel="noopener">WhatsApp directo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="menu-content">
+    <section class="menu-hero">
+      <div class="menu-hero__bg" aria-hidden="true"></div>
+      <div class="container menu-hero__content reveal">
+        <p class="eyebrow">Menú interactivo</p>
+        <h1>Elige. Organiza. <em>Envía.</em></h1>
+        <p>Agrega tus productos, revisa el pedido y mándalo a WhatsApp. El precio final, disponibilidad y tiempo de entrega se confirman con Pizzas Claaudiss.</p>
+        <div class="menu-hero__notice">
+          <span>🔒</span>
+          <p><strong>Sin pagos dentro del sitio.</strong> Aquí solamente preparas el mensaje de tu pedido.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-section" id="pizzas">
+      <div class="container order-layout">
+        <div class="catalog">
+          <div class="catalog__top reveal">
+            <div>
+              <p class="eyebrow eyebrow--dark">Arma tu orden</p>
+              <h2>¿Qué se te antoja?</h2>
+            </div>
+            <button class="cart-mobile-button" type="button" data-cart-open>
+              Ver pedido <span data-cart-count>0</span>
+            </button>
+          </div>
+
+          <div class="category-tabs" role="tablist" aria-label="Categorías del menú">
+            <button class="category-tab is-active" type="button" data-filter="all">Todo</button>
+            <button class="category-tab" type="button" data-filter="pizza">Pizzas</button>
+            <button class="category-tab" type="button" data-filter="burger">Hamburguesas</button>
+            <button class="category-tab" type="button" data-filter="extra">Extras</button>
+          </div>
+
+          <div class="menu-note reveal">
+            <strong>Menú base para pedidos:</strong> los sabores se basan en la oferta publicada del negocio. Precios y disponibilidad se confirman por WhatsApp.
+          </div>
+
+          <div class="product-grid" id="product-grid">
+            <article class="product-card reveal" data-category="pizza" data-id="hawaiana" data-name="Pizza Hawaiana">
+              <div class="product-card__image"><img src="assets/img/pizza-pepperoni-hawaiana.webp" alt="Pizza hawaiana" loading="lazy"><span>Popular</span></div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Hawaiana</h3><strong>Precio a confirmar</strong></div>
+                <p>Jamón, piña, salsa de tomate y queso gratinado.</p>
+                <label>Tamaño
+                  <select class="product-size"><option>Chica</option><option selected>Mediana</option><option>Grande</option><option>Familiar</option></select>
+                </label>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="pizza" data-id="pastor" data-name="Pizza Pastor">
+              <div class="product-card__image"><img src="assets/img/pizza-pastor.webp" alt="Pizza al pastor" loading="lazy"><span>De la casa</span></div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Pastor</h3><strong>Precio a confirmar</strong></div>
+                <p>Carne al pastor, cebolla, pimiento y abundante queso.</p>
+                <label>Tamaño
+                  <select class="product-size"><option>Chica</option><option selected>Mediana</option><option>Grande</option><option>Familiar</option></select>
+                </label>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="pizza" data-id="pepperoni" data-name="Pizza Pepperoni">
+              <div class="product-card__image"><img src="assets/img/pizza-queso.webp" alt="Pizza de pepperoni y queso" loading="lazy"></div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Pepperoni</h3><strong>Precio a confirmar</strong></div>
+                <p>Una clásica con pepperoni, salsa y queso gratinado.</p>
+                <label>Tamaño
+                  <select class="product-size"><option>Chica</option><option selected>Mediana</option><option>Grande</option><option>Familiar</option></select>
+                </label>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="pizza" data-id="mixta" data-name="Pizza Mixta">
+              <div class="product-card__image"><img src="assets/img/pizza-mixta.webp" alt="Pizza mixta" loading="lazy"></div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Mixta</h3><strong>Precio a confirmar</strong></div>
+                <p>Jamón, salchicha, pimientos, cebolla y queso.</p>
+                <label>Tamaño
+                  <select class="product-size"><option>Chica</option><option selected>Mediana</option><option>Grande</option><option>Familiar</option></select>
+                </label>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="pizza" data-id="cuatro-sabores" data-name="Pizza Cuatro sabores">
+              <div class="product-card__image"><img src="assets/img/pizza-cuatro-sabores.webp" alt="Pizza de cuatro sabores" loading="lazy"><span>Para compartir</span></div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Cuatro sabores</h3><strong>Precio a confirmar</strong></div>
+                <p>Ideal cuando cada persona quiere una combinación diferente.</p>
+                <label>Tamaño
+                  <select class="product-size"><option>Mediana</option><option selected>Grande</option><option>Familiar</option></select>
+                </label>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="pizza" data-id="especial" data-name="Pizza Especial Claaudiss">
+              <div class="product-card__image"><img src="assets/img/pizza-mitad-mitad.webp" alt="Pizza especial Claaudiss" loading="lazy"><span>Especial</span></div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Especial Claaudiss</h3><strong>Precio a confirmar</strong></div>
+                <p>Combinación abundante con ingredientes seleccionados de la casa.</p>
+                <label>Tamaño
+                  <select class="product-size"><option>Chica</option><option selected>Mediana</option><option>Grande</option><option>Familiar</option></select>
+                </label>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-sencilla" data-name="Hamburguesa sencilla">
+              <div class="product-card__emoji" aria-hidden="true">🍔</div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Hamburguesa sencilla</h3><strong>Precio a confirmar</strong></div>
+                <p>Carne, queso y vegetales. Pregunta por sus complementos.</p>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-hawaiana" data-name="Hamburguesa hawaiana">
+              <div class="product-card__emoji" aria-hidden="true">🍍</div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Hamburguesa hawaiana</h3><strong>Precio a confirmar</strong></div>
+                <p>Hamburguesa con jamón, piña y queso.</p>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-surtida" data-name="Hamburguesa surtida">
+              <div class="product-card__emoji" aria-hidden="true">🥓</div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Hamburguesa surtida</h3><strong>Precio a confirmar</strong></div>
+                <p>Una opción más completa, preparada con ingredientes variados.</p>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-doble" data-name="Hamburguesa doble carne">
+              <div class="product-card__emoji" aria-hidden="true">🍔</div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Doble carne</h3><strong>Precio a confirmar</strong></div>
+                <p>Para el antojo grande: doble porción de carne y queso.</p>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card product-card--text reveal" data-category="extra" data-id="hotdog" data-name="Hot dog">
+              <div class="product-card__emoji" aria-hidden="true">🌭</div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Hot dog</h3><strong>Precio a confirmar</strong></div>
+                <p>Una opción práctica para complementar el pedido.</p>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card product-card--text reveal" data-category="extra" data-id="alitas-papas" data-name="Alitas con papas">
+              <div class="product-card__emoji" aria-hidden="true">🍗</div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Alitas con papas</h3><strong>Precio a confirmar</strong></div>
+                <p>Pregunta por las porciones y sabores disponibles.</p>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card product-card--text reveal" data-category="extra" data-id="pan-ajo" data-name="Pan de ajo">
+              <div class="product-card__emoji" aria-hidden="true">🥖</div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Pan de ajo</h3><strong>Precio a confirmar</strong></div>
+                <p>Perfecto para acompañar tu pizza.</p>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+
+            <article class="product-card product-card--text reveal" data-category="extra" data-id="papas" data-name="Papas a la francesa">
+              <div class="product-card__emoji" aria-hidden="true">🍟</div>
+              <div class="product-card__body">
+                <div class="product-card__title"><h3>Papas a la francesa</h3><strong>Precio a confirmar</strong></div>
+                <p>Orden de papas para acompañar.</p>
+                <button class="add-product" type="button">Agregar al pedido</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="cart-panel" id="cart-panel" aria-label="Resumen del pedido">
+          <button class="cart-close" type="button" data-cart-close aria-label="Cerrar pedido">×</button>
+          <div class="cart-panel__header">
+            <p class="eyebrow">Tu pedido</p>
+            <h2>Resumen</h2>
+            <span><b data-cart-count>0</b> productos</span>
+          </div>
+
+          <div class="cart-empty" data-cart-empty>
+            <div>🍕</div>
+            <h3>Tu pedido está vacío</h3>
+            <p>Agrega algo del menú para comenzar.</p>
+          </div>
+          <div class="cart-items" data-cart-items></div>
+
+          <form class="order-form" id="order-form">
+            <fieldset>
+              <legend>¿Cómo recibirás tu pedido?</legend>
+              <div class="service-options">
+                <label><input type="radio" name="service" value="Entrega a domicilio" checked><span>🛵 Domicilio</span></label>
+                <label><input type="radio" name="service" value="Recoger en el local"><span>🏠 Recoger</span></label>
+              </div>
+            </fieldset>
+            <label>Tu nombre
+              <input type="text" name="customer" placeholder="Ej. Francisco" autocomplete="name">
+            </label>
+            <label data-address-field>Dirección o referencia
+              <textarea name="address" rows="2" placeholder="Calle, número y una referencia"></textarea>
+            </label>
+            <label>Notas del pedido
+              <textarea name="notes" rows="2" placeholder="Ej. sin cebolla, traer cambio..."></textarea>
+            </label>
+            <div class="cart-disclaimer">
+              <strong>Pago directo con el negocio</strong>
+              <span>Efectivo o tarjeta, sujeto a confirmación. Este sitio no procesa pagos.</span>
+            </div>
+            <button class="send-order" type="submit">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a12.8 12.8 0 0 0-11 19.4L3.2 29l6.8-1.8A12.9 12.9 0 1 0 16 3Zm0 23.3c-2 0-4-.6-5.7-1.6l-.4-.2-4 .9 1-3.9-.3-.4A10.4 10.4 0 1 1 16 26.3Zm5.7-7.8c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-2-.9-3.3-1.7-4.6-4-.3-.6.3-.5.9-1.7.1-.2 0-.5 0-.7l-1-2.4c-.3-.6-.6-.5-.9-.5H11c-.3 0-.7.1-1 .5-.4.4-1.4 1.4-1.4 3.4 0 2 1.5 4 1.7 4.3.2.3 2.9 4.4 7 6.2 2.6 1.1 3.6 1.2 4.9 1 1.5-.2 1.8-.9 2-1.7.2-.8.2-1.5.1-1.7-.1-.2-.3-.3-.6-.4Z"/></svg>
+              Enviar pedido por WhatsApp
+            </button>
+            <p class="form-help">Se abrirá WhatsApp con tu pedido listo para revisar y enviar.</p>
+          </form>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-backdrop" data-cart-close></div>
+
+  <footer class="footer footer--compact">
+    <div class="container footer__bottom">
+      <span>© <span data-current-year></span> Pizzas Claaudiss</span>
+      <a href="index.html">Volver al inicio</a>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>Producto agregado</div>
+</body>
+</html>
