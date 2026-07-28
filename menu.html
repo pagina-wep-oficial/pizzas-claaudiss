@@ -47,10 +47,9 @@
       <div class="container menu-hero__content reveal">
         <p class="eyebrow">Menú interactivo</p>
         <h1>Elige. Organiza. <em>Envía.</em></h1>
-        <p>Agrega tus productos, revisa el pedido y mándalo a WhatsApp. El precio final, disponibilidad y tiempo de entrega se confirman con Pizzas Claaudiss.</p>
+        <p>Agrega tus productos, revisa el total estimado y manda el pedido a WhatsApp para confirmar disponibilidad y tiempo de entrega.</p>
         <div class="menu-hero__notice">
-          <span>🔒</span>
-          <p><strong>Sin pagos dentro del sitio.</strong> Aquí solamente preparas el mensaje de tu pedido.</p>
+          
         </div>
       </div>
     </section>
@@ -63,9 +62,6 @@
               <p class="eyebrow eyebrow--dark">Arma tu orden</p>
               <h2>¿Qué se te antoja?</h2>
             </div>
-            <button class="cart-mobile-button" type="button" data-cart-open>
-              Ver pedido <span data-cart-count>0</span>
-            </button>
           </div>
 
           <div class="category-tabs" role="tablist" aria-label="Categorías del menú">
@@ -76,149 +72,149 @@
           </div>
 
           <div class="menu-note reveal">
-            <strong>Menú base para pedidos:</strong> los sabores se basan en la oferta publicada del negocio. Precios y disponibilidad se confirman por WhatsApp.
+            <strong>Precios de demostración en pesos mexicanos:</strong> el total se calcula automáticamente y la disponibilidad se confirma por WhatsApp.
           </div>
 
           <div class="product-grid" id="product-grid">
-            <article class="product-card reveal" data-category="pizza" data-id="hawaiana" data-name="Pizza Hawaiana">
+            <article class="product-card reveal" data-category="pizza" data-id="hawaiana" data-name="Pizza Hawaiana" data-price="139">
               <div class="product-card__image"><img src="assets/img/pizza-pepperoni-hawaiana.webp" alt="Pizza hawaiana" loading="lazy"><span>Popular</span></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Hawaiana</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Hawaiana</h3><strong class="product-price" data-product-price aria-live="polite">$139</strong></div>
                 <p>Jamón, piña, salsa de tomate y queso gratinado.</p>
                 <label>Tamaño
-                  <select class="product-size"><option>Chica</option><option selected>Mediana</option><option>Grande</option><option>Familiar</option></select>
+                  <select class="product-size"><option value="Chica" data-price="99">Chica · $99</option><option value="Mediana" data-price="139" selected>Mediana · $139</option><option value="Grande" data-price="179">Grande · $179</option><option value="Familiar" data-price="229">Familiar · $229</option></select>
                 </label>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card reveal" data-category="pizza" data-id="pastor" data-name="Pizza Pastor">
+            <article class="product-card reveal" data-category="pizza" data-id="pastor" data-name="Pizza Pastor" data-price="149">
               <div class="product-card__image"><img src="assets/img/pizza-pastor.webp" alt="Pizza al pastor" loading="lazy"><span>De la casa</span></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Pastor</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Pastor</h3><strong class="product-price" data-product-price aria-live="polite">$149</strong></div>
                 <p>Carne al pastor, cebolla, pimiento y abundante queso.</p>
                 <label>Tamaño
-                  <select class="product-size"><option>Chica</option><option selected>Mediana</option><option>Grande</option><option>Familiar</option></select>
+                  <select class="product-size"><option value="Chica" data-price="109">Chica · $109</option><option value="Mediana" data-price="149" selected>Mediana · $149</option><option value="Grande" data-price="189">Grande · $189</option><option value="Familiar" data-price="239">Familiar · $239</option></select>
                 </label>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card reveal" data-category="pizza" data-id="pepperoni" data-name="Pizza Pepperoni">
+            <article class="product-card reveal" data-category="pizza" data-id="pepperoni" data-name="Pizza Pepperoni" data-price="129">
               <div class="product-card__image"><img src="assets/img/pizza-queso.webp" alt="Pizza de pepperoni y queso" loading="lazy"></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Pepperoni</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Pepperoni</h3><strong class="product-price" data-product-price aria-live="polite">$129</strong></div>
                 <p>Una clásica con pepperoni, salsa y queso gratinado.</p>
                 <label>Tamaño
-                  <select class="product-size"><option>Chica</option><option selected>Mediana</option><option>Grande</option><option>Familiar</option></select>
+                  <select class="product-size"><option value="Chica" data-price="89">Chica · $89</option><option value="Mediana" data-price="129" selected>Mediana · $129</option><option value="Grande" data-price="169">Grande · $169</option><option value="Familiar" data-price="219">Familiar · $219</option></select>
                 </label>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card reveal" data-category="pizza" data-id="mixta" data-name="Pizza Mixta">
+            <article class="product-card reveal" data-category="pizza" data-id="mixta" data-name="Pizza Mixta" data-price="145">
               <div class="product-card__image"><img src="assets/img/pizza-mixta.webp" alt="Pizza mixta" loading="lazy"></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Mixta</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Mixta</h3><strong class="product-price" data-product-price aria-live="polite">$145</strong></div>
                 <p>Jamón, salchicha, pimientos, cebolla y queso.</p>
                 <label>Tamaño
-                  <select class="product-size"><option>Chica</option><option selected>Mediana</option><option>Grande</option><option>Familiar</option></select>
+                  <select class="product-size"><option value="Chica" data-price="105">Chica · $105</option><option value="Mediana" data-price="145" selected>Mediana · $145</option><option value="Grande" data-price="185">Grande · $185</option><option value="Familiar" data-price="235">Familiar · $235</option></select>
                 </label>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card reveal" data-category="pizza" data-id="cuatro-sabores" data-name="Pizza Cuatro sabores">
+            <article class="product-card reveal" data-category="pizza" data-id="cuatro-sabores" data-name="Pizza Cuatro sabores" data-price="199">
               <div class="product-card__image"><img src="assets/img/pizza-cuatro-sabores.webp" alt="Pizza de cuatro sabores" loading="lazy"><span>Para compartir</span></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Cuatro sabores</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Cuatro sabores</h3><strong class="product-price" data-product-price aria-live="polite">$199</strong></div>
                 <p>Ideal cuando cada persona quiere una combinación diferente.</p>
                 <label>Tamaño
-                  <select class="product-size"><option>Mediana</option><option selected>Grande</option><option>Familiar</option></select>
+                  <select class="product-size"><option value="Mediana" data-price="159">Mediana · $159</option><option value="Grande" data-price="199" selected>Grande · $199</option><option value="Familiar" data-price="249">Familiar · $249</option></select>
                 </label>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card reveal" data-category="pizza" data-id="especial" data-name="Pizza Especial Claaudiss">
+            <article class="product-card reveal" data-category="pizza" data-id="especial" data-name="Pizza Especial Claaudiss" data-price="155">
               <div class="product-card__image"><img src="assets/img/pizza-mitad-mitad.webp" alt="Pizza especial Claaudiss" loading="lazy"><span>Especial</span></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Especial Claaudiss</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Especial Claaudiss</h3><strong class="product-price" data-product-price aria-live="polite">$155</strong></div>
                 <p>Combinación abundante con ingredientes seleccionados de la casa.</p>
                 <label>Tamaño
-                  <select class="product-size"><option>Chica</option><option selected>Mediana</option><option>Grande</option><option>Familiar</option></select>
+                  <select class="product-size"><option value="Chica" data-price="115">Chica · $115</option><option value="Mediana" data-price="155" selected>Mediana · $155</option><option value="Grande" data-price="195">Grande · $195</option><option value="Familiar" data-price="245">Familiar · $245</option></select>
                 </label>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-sencilla" data-name="Hamburguesa sencilla">
-              <div class="product-card__emoji" aria-hidden="true">🍔</div>
+            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-sencilla" data-name="Hamburguesa sencilla" data-price="75">
+              <div class="product-card__image"><img src="assets/img/burger-sencilla.webp" alt="Hamburguesa sencilla con queso y vegetales" loading="lazy"></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Hamburguesa sencilla</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Hamburguesa sencilla</h3><strong class="product-price" data-product-price>$75</strong></div>
                 <p>Carne, queso y vegetales. Pregunta por sus complementos.</p>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-hawaiana" data-name="Hamburguesa hawaiana">
-              <div class="product-card__emoji" aria-hidden="true">🍍</div>
+            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-hawaiana" data-name="Hamburguesa hawaiana" data-price="90">
+              <div class="product-card__image"><img src="assets/img/burger-hawaiana.webp" alt="Hamburguesa hawaiana con jamón, queso y piña asada" loading="lazy"></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Hamburguesa hawaiana</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Hamburguesa hawaiana</h3><strong class="product-price" data-product-price>$90</strong></div>
                 <p>Hamburguesa con jamón, piña y queso.</p>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-surtida" data-name="Hamburguesa surtida">
-              <div class="product-card__emoji" aria-hidden="true">🥓</div>
+            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-surtida" data-name="Hamburguesa surtida" data-price="105">
+              <div class="product-card__image"><img src="assets/img/burger-surtida.webp" alt="Hamburguesa surtida con queso, tocino y vegetales" loading="lazy"></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Hamburguesa surtida</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Hamburguesa surtida</h3><strong class="product-price" data-product-price>$105</strong></div>
                 <p>Una opción más completa, preparada con ingredientes variados.</p>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-doble" data-name="Hamburguesa doble carne">
-              <div class="product-card__emoji" aria-hidden="true">🍔</div>
+            <article class="product-card product-card--text reveal" data-category="burger" data-id="burger-doble" data-name="Hamburguesa doble carne" data-price="120">
+              <div class="product-card__image"><img src="assets/img/burger-doble.webp" alt="Hamburguesa con doble carne y queso" loading="lazy"></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Doble carne</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Doble carne</h3><strong class="product-price" data-product-price>$120</strong></div>
                 <p>Para el antojo grande: doble porción de carne y queso.</p>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card product-card--text reveal" data-category="extra" data-id="hotdog" data-name="Hot dog">
-              <div class="product-card__emoji" aria-hidden="true">🌭</div>
+            <article class="product-card product-card--text reveal" data-category="extra" data-id="hotdog" data-name="Hot dog" data-price="50">
+              <div class="product-card__image"><img src="assets/img/hotdog.webp" alt="Hot dog con tomate, cebolla, mostaza y cátsup" loading="lazy"></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Hot dog</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Hot dog</h3><strong class="product-price" data-product-price>$50</strong></div>
                 <p>Una opción práctica para complementar el pedido.</p>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card product-card--text reveal" data-category="extra" data-id="alitas-papas" data-name="Alitas con papas">
-              <div class="product-card__emoji" aria-hidden="true">🍗</div>
+            <article class="product-card product-card--text reveal" data-category="extra" data-id="alitas-papas" data-name="Alitas con papas" data-price="135">
+              <div class="product-card__image"><img src="assets/img/alitas-papas.webp" alt="Alitas glaseadas acompañadas con papas a la francesa" loading="lazy"></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Alitas con papas</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Alitas con papas</h3><strong class="product-price" data-product-price>$135</strong></div>
                 <p>Pregunta por las porciones y sabores disponibles.</p>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card product-card--text reveal" data-category="extra" data-id="pan-ajo" data-name="Pan de ajo">
-              <div class="product-card__emoji" aria-hidden="true">🥖</div>
+            <article class="product-card product-card--text reveal" data-category="extra" data-id="pan-ajo" data-name="Pan de ajo" data-price="55">
+              <div class="product-card__image"><img src="assets/img/pan-ajo.webp" alt="Pan de ajo dorado con mantequilla y perejil" loading="lazy"></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Pan de ajo</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Pan de ajo</h3><strong class="product-price" data-product-price>$55</strong></div>
                 <p>Perfecto para acompañar tu pizza.</p>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
             </article>
 
-            <article class="product-card product-card--text reveal" data-category="extra" data-id="papas" data-name="Papas a la francesa">
-              <div class="product-card__emoji" aria-hidden="true">🍟</div>
+            <article class="product-card product-card--text reveal" data-category="extra" data-id="papas" data-name="Papas a la francesa" data-price="60">
+              <div class="product-card__image"><img src="assets/img/papas-francesa.webp" alt="Canasta de papas a la francesa doradas" loading="lazy"></div>
               <div class="product-card__body">
-                <div class="product-card__title"><h3>Papas a la francesa</h3><strong>Precio a confirmar</strong></div>
+                <div class="product-card__title"><h3>Papas a la francesa</h3><strong class="product-price" data-product-price>$60</strong></div>
                 <p>Orden de papas para acompañar.</p>
                 <button class="add-product" type="button">Agregar al pedido</button>
               </div>
@@ -227,51 +223,119 @@
         </div>
 
         <aside class="cart-panel" id="cart-panel" aria-label="Resumen del pedido">
-          <button class="cart-close" type="button" data-cart-close aria-label="Cerrar pedido">×</button>
           <div class="cart-panel__header">
-            <p class="eyebrow">Tu pedido</p>
-            <h2>Resumen</h2>
-            <span><b data-cart-count>0</b> productos</span>
-          </div>
-
-          <div class="cart-empty" data-cart-empty>
-            <div>🍕</div>
-            <h3>Tu pedido está vacío</h3>
-            <p>Agrega algo del menú para comenzar.</p>
-          </div>
-          <div class="cart-items" data-cart-items></div>
-
-          <form class="order-form" id="order-form">
-            <fieldset>
-              <legend>¿Cómo recibirás tu pedido?</legend>
-              <div class="service-options">
-                <label><input type="radio" name="service" value="Entrega a domicilio" checked><span>🛵 Domicilio</span></label>
-                <label><input type="radio" name="service" value="Recoger en el local"><span>🏠 Recoger</span></label>
-              </div>
-            </fieldset>
-            <label>Tu nombre
-              <input type="text" name="customer" placeholder="Ej. Francisco" autocomplete="name">
-            </label>
-            <label data-address-field>Dirección o referencia
-              <textarea name="address" rows="2" placeholder="Calle, número y una referencia"></textarea>
-            </label>
-            <label>Notas del pedido
-              <textarea name="notes" rows="2" placeholder="Ej. sin cebolla, traer cambio..."></textarea>
-            </label>
-            <div class="cart-disclaimer">
-              <strong>Pago directo con el negocio</strong>
-              <span>Efectivo o tarjeta, sujeto a confirmación. Este sitio no procesa pagos.</span>
+            <div>
+              <p class="eyebrow">Tu pedido</p>
+              <h2>Resumen</h2>
             </div>
-            <button class="send-order" type="submit">
-              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a12.8 12.8 0 0 0-11 19.4L3.2 29l6.8-1.8A12.9 12.9 0 1 0 16 3Zm0 23.3c-2 0-4-.6-5.7-1.6l-.4-.2-4 .9 1-3.9-.3-.4A10.4 10.4 0 1 1 16 26.3Zm5.7-7.8c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-2-.9-3.3-1.7-4.6-4-.3-.6.3-.5.9-1.7.1-.2 0-.5 0-.7l-1-2.4c-.3-.6-.6-.5-.9-.5H11c-.3 0-.7.1-1 .5-.4.4-1.4 1.4-1.4 3.4 0 2 1.5 4 1.7 4.3.2.3 2.9 4.4 7 6.2 2.6 1.1 3.6 1.2 4.9 1 1.5-.2 1.8-.9 2-1.7.2-.8.2-1.5.1-1.7-.1-.2-.3-.3-.6-.4Z"/></svg>
-              Enviar pedido por WhatsApp
-            </button>
-            <p class="form-help">Se abrirá WhatsApp con tu pedido listo para revisar y enviar.</p>
-          </form>
+            <button class="cart-close" type="button" data-cart-close aria-label="Cerrar pedido">×</button>
+          </div>
+
+          <div class="cart-body">
+            <div class="cart-empty" data-cart-empty>
+              <div>🍕</div>
+              <h3>Tu pedido está vacío</h3>
+              <p>Agrega algo del menú para comenzar.</p>
+            </div>
+            <div class="cart-items" data-cart-items></div>
+            <div class="cart-total">
+              <span>Total estimado</span>
+              <strong data-cart-total>$0 MXN</strong>
+            </div>
+
+            <form class="order-form" id="order-form">
+              <fieldset>
+                <legend>¿Cómo recibirás tu pedido?</legend>
+                <div class="service-options">
+                  <label><input type="radio" name="service" value="Entrega a domicilio" checked><span>🛵 Domicilio</span></label>
+                  <label><input type="radio" name="service" value="Recoger en el local"><span>🏠 Recoger</span></label>
+                </div>
+              </fieldset>
+              <label>Tu nombre
+                <input type="text" name="customer" placeholder="Ej. Francisco" autocomplete="name">
+              </label>
+              <label data-address-field>Dirección o referencia
+                <textarea name="address" rows="2" placeholder="Calle, número, color de casa, referencias..."></textarea>
+                <div class="location-tag" id="location-tag" hidden>
+                  <span class="loc-tag-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></span>
+                  <span class="loc-tag-link" id="loc-tag-link"></span>
+                  <button type="button" class="loc-tag-remove" id="loc-tag-remove" aria-label="Quitar ubicación">×</button>
+                </div>
+                <button type="button" class="locate-btn" id="locate-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+                  Compartir mi ubicación
+                </button>
+              </label>
+              <label>Notas del pedido
+                <textarea name="notes" rows="2" placeholder="Ej. sin cebolla, traer cambio..."></textarea>
+              </label>
+              <div class="cart-disclaimer">
+                <strong>Precios de demostración</strong>
+                <span>El total es estimado. El negocio confirma disponibilidad y forma de pago por WhatsApp.</span>
+              </div>
+              <button class="send-order" type="submit">
+                <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a12.8 12.8 0 0 0-11 19.4L3.2 29l6.8-1.8A12.9 12.9 0 1 0 16 3Zm0 23.3c-2 0-4-.6-5.7-1.6l-.4-.2-4 .9 1-3.9-.3-.4A10.4 10.4 0 1 1 16 26.3Zm5.7-7.8c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-2-.9-3.3-1.7-4.6-4-.3-.6.3-.5.9-1.7.1-.2 0-.5 0-.7l-1-2.4c-.3-.6-.6-.5-.9-.5H11c-.3 0-.7.1-1 .5-.4.4-1.4 1.4-1.4 3.4 0 2 1.5 4 1.7 4.3.2.3 2.9 4.4 7 6.2 2.6 1.1 3.6 1.2 4.9 1 1.5-.2 1.8-.9 2-1.7.2-.8.2-1.5.1-1.7-.1-.2-.3-.3-.6-.4Z"/></svg>
+                Enviar pedido por WhatsApp
+              </button>
+              <p class="form-help">Se abrirá WhatsApp con tu pedido listo para revisar y enviar.</p>
+            </form>
+          </div>
         </aside>
       </div>
     </section>
   </main>
+
+  <div class="product-modal" data-product-modal hidden>
+    <button class="product-modal__backdrop" type="button" data-product-modal-close tabindex="-1" aria-label="Cerrar producto"></button>
+    <section class="product-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="product-modal-title" aria-describedby="product-modal-description">
+      <button class="product-modal__close" type="button" data-product-modal-close aria-label="Cerrar">×</button>
+      <div class="product-modal__media">
+        <img data-modal-image src="" alt="" hidden>
+        <div class="product-modal__emoji" data-modal-emoji role="img" hidden></div>
+      </div>
+      <div class="product-modal__content">
+        <p class="eyebrow eyebrow--dark">Personaliza tu producto</p>
+        <h2 id="product-modal-title" data-modal-name>Producto</h2>
+        <p class="product-modal__description" id="product-modal-description" data-modal-description></p>
+
+        <div class="product-modal__options">
+          <label data-modal-size-field>Tamaño
+            <select data-modal-size></select>
+          </label>
+          <div class="product-modal__quantity">
+            <span>Cantidad</span>
+            <div>
+              <button type="button" data-modal-action="minus" aria-label="Quitar una unidad">−</button>
+              <strong data-modal-quantity>1</strong>
+              <button type="button" data-modal-action="plus" aria-label="Agregar una unidad">+</button>
+            </div>
+          </div>
+        </div>
+
+        <label class="product-modal__note">Nota para este producto
+          <textarea data-modal-note rows="3" maxlength="140" placeholder="Ej. sin cebolla, bien cocida, mitad sin piña..."></textarea>
+          <small><span data-modal-note-count>0</span>/140</small>
+        </label>
+
+        <div class="product-modal__footer">
+          <div>
+            <span data-modal-price-label>Precio</span>
+            <strong data-modal-price>$0</strong>
+          </div>
+          <button class="product-modal__add" type="button" data-modal-add>
+            <span>Agregar al pedido</span>
+            <strong data-modal-add-total>$0</strong>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <button class="cart-floating" id="cartFloating" type="button" data-cart-open aria-label="Abrir pedido">
+    <span class="cart-floating-icon">🛒</span>
+    <span class="cart-floating-copy"><b>Mi pedido</b><small><span data-cart-count>0</span> productos</small></span>
+    <strong data-cart-total>$0 MXN</strong>
+  </button>
 
   <div class="cart-backdrop" data-cart-close></div>
 
