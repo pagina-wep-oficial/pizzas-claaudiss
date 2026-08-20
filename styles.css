@@ -345,6 +345,10 @@ h2 { margin-bottom: 18px; font-size: clamp(3rem, 6vw, 5.6rem); }
 .video-frame--tall iframe { min-height: 420px; }
 .video-frame--wide video { aspect-ratio: 21 / 9; }
 .video-frame img[data-eb-future="video_poster"] { display: none; }
+.site-video-frame { position: relative; overflow: hidden; border-radius: 22px; background: #0d0806; }
+.site-video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.site-video-poster-link { display: grid; gap: 12px; text-decoration: none; }
+.site-video-poster { display: block; width: 100%; border-radius: 22px; background: #0d0806; }
 .video-card__copy { display: grid; gap: 9px; color: rgba(255,255,255,.82); }
 .video-card__copy h3 { margin: 0; font-family: "Manrope", system-ui, sans-serif; font-size: 1.18rem; font-weight: 800; letter-spacing: 0; line-height: 1.3; color: #fff; }
 .video-card__copy p { margin: 0; color: rgba(255,255,255,.6); font-size: .9rem; }

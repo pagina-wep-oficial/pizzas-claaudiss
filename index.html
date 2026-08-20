@@ -191,13 +191,11 @@
         <div class="video-grid">
           <article class="video-card video-card--main">
             <div class="video-frame">
-              <div data-eb-future="video_file" data-eb-key="video.hero.file" data-eb-role="hero" data-eb-kind="file" data-eb-section="video" data-eb-future-kind="mp4">
-                <video controls muted playsinline preload="metadata" poster="assets/img/pizza-mitad-mitad.webp">
-                  <source src="assets/videos/pizza-closeup.mp4" type="video/mp4">
-                  Tu navegador no puede reproducir este video.
-                </video>
-                <img src="assets/img/pizza-mitad-mitad.webp" alt="Póster del video de pizza" data-eb-future="video_poster" data-eb-key="video.hero.poster" data-eb-role="poster" data-eb-kind="poster" data-eb-section="video" loading="lazy">
-              </div>
+              <video controls muted playsinline preload="metadata" poster="assets/img/pizza-mitad-mitad.webp" data-eb-future="video_stream" data-eb-key="video.hero.file" data-eb-role="video" data-eb-kind="stream" data-eb-section="video">
+                <source src="assets/videos/pizza-closeup.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video.
+              </video>
+              <img src="assets/img/pizza-mitad-mitad.webp" alt="Póster del video de pizza" data-eb-future="video_poster" data-eb-key="video.hero.poster" data-eb-role="poster" data-eb-kind="poster" data-eb-section="video" loading="lazy">
             </div>
             <div class="video-card__copy">
               <span class="video-tag">Video propio</span>
@@ -208,7 +206,7 @@
 
           <article class="video-card">
             <div class="video-frame">
-              <div data-eb-future="video_embed" data-eb-key="video.embed.mass" data-eb-role="hero" data-eb-kind="embed" data-eb-section="video">
+              <div data-eb-editable="video_embed" data-eb-key="video.embed.mass" data-eb-role="video" data-eb-kind="embed" data-eb-section="video" data-eb-value="%7B%22kind%22%3A%22video_embed%22%2C%22provider%22%3A%22youtube%22%2C%22url%22%3A%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DTsDNMnly-Cc%22%2C%22title%22%3A%22C%C3%B3mo%20hacer%20masa%20de%20pizza%22%2C%22poster_url%22%3A%22%22%2C%22aspect_ratio%22%3A%2216%20%2F%209%22%2C%22autoplay%22%3Afalse%2C%22muted%22%3Afalse%2C%22loop%22%3Afalse%2C%22controls%22%3Atrue%7D">
                 <iframe src="https://www.youtube.com/embed/TsDNMnly-Cc" title="Cómo hacer masa de pizza" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
@@ -221,7 +219,7 @@
 
           <article class="video-card">
             <div class="video-frame">
-              <div data-eb-future="video_embed" data-eb-key="video.embed.recipe" data-eb-role="hero" data-eb-kind="embed" data-eb-section="video">
+              <div data-eb-editable="video_embed" data-eb-key="video.embed.recipe" data-eb-role="video" data-eb-kind="embed" data-eb-section="video" data-eb-value="%7B%22kind%22%3A%22video_embed%22%2C%22provider%22%3A%22youtube%22%2C%22url%22%3A%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DcrdtrzZj3fo%22%2C%22title%22%3A%22Receta%20de%20pizza%20casera%22%2C%22poster_url%22%3A%22%22%2C%22aspect_ratio%22%3A%2216%20%2F%209%22%2C%22autoplay%22%3Afalse%2C%22muted%22%3Afalse%2C%22loop%22%3Afalse%2C%22controls%22%3Atrue%7D">
                 <iframe src="https://www.youtube.com/embed/crdtrzZj3fo" title="Receta de pizza casera" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
@@ -234,7 +232,7 @@
 
           <article class="video-card">
             <div class="video-frame video-frame--tall">
-              <div data-eb-future="video_embed" data-eb-key="video.embed.tiktok" data-eb-role="hero" data-eb-kind="embed" data-eb-section="video">
+              <div data-eb-editable="video_embed" data-eb-key="video.embed.tiktok" data-eb-role="video" data-eb-kind="embed" data-eb-section="video" data-eb-value="%7B%22kind%22%3A%22video_embed%22%2C%22provider%22%3A%22external%22%2C%22url%22%3A%22https%3A%2F%2Fwww.tiktok.com%2F%40beatrizcontreras31%2Fvideo%2F7523395747539143967%22%2C%22title%22%3A%22Pizza%20sin%20horno%20en%20sart%C3%A9n%22%2C%22poster_url%22%3A%22%22%2C%22aspect_ratio%22%3A%229%20%2F%2016%22%2C%22autoplay%22%3Afalse%2C%22muted%22%3Afalse%2C%22loop%22%3Afalse%2C%22controls%22%3Atrue%7D">
                 <iframe src="https://www.tiktok.com/embed/v2/7523395747539143967" title="Pizza sin horno en TikTok" loading="lazy" allowfullscreen></iframe>
               </div>
             </div>
@@ -247,13 +245,11 @@
 
           <article class="video-card video-card--wide">
             <div class="video-frame video-frame--wide">
-              <div data-eb-future="video_file" data-eb-key="video.extra.file" data-eb-role="interior" data-eb-kind="file" data-eb-section="video">
-                <video controls muted playsinline preload="metadata" poster="assets/img/pizza-pastor.webp">
-                  <source src="assets/videos/pizza-pepperoni.mp4" type="video/mp4">
-                  Tu navegador no puede reproducir este video.
-                </video>
-                <img src="assets/img/pizza-pastor.webp" alt="Póster del segundo video" data-eb-future="video_poster" data-eb-key="video.extra.poster" data-eb-role="poster" data-eb-kind="poster" data-eb-section="video" loading="lazy">
-              </div>
+              <video controls muted playsinline preload="metadata" poster="assets/img/pizza-pastor.webp" data-eb-future="video_stream" data-eb-key="video.extra.file" data-eb-role="video" data-eb-kind="stream" data-eb-section="video">
+                <source src="assets/videos/pizza-pepperoni.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video.
+              </video>
+              <img src="assets/img/pizza-pastor.webp" alt="Póster del segundo video" data-eb-future="video_poster" data-eb-key="video.extra.poster" data-eb-role="poster" data-eb-kind="poster" data-eb-section="video" loading="lazy">
             </div>
             <div class="video-card__copy">
               <span class="video-tag">Video propio</span>
